@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.hibernate.eclipse.launch.ConsoleConfigurationLaunchConfigurationType">
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="pcp-stock"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="pcp-stock"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.CFG_XML_FILE" value="\pcp-stock\src\main\java\hibernate.cfg.xml"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.CONFIGURATION_FACTORY" value="JPA"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.CONNECTION_PROFILE_NAME" value="New Generic JDBC(1)"/>
+    <listAttribute key="org.hibernate.eclipse.launch.FILE_MAPPINGS"/>
+    <stringAttribute key="org.hibernate.eclipse.launch.HIBERNATE_VERSION" value="5.6"/>
+    <stringAttribute key="org.hibernate.eclipse.launchDIALECT" value="org.hibernate.dialect.SQLServerDialect"/>
+</launchConfiguration>

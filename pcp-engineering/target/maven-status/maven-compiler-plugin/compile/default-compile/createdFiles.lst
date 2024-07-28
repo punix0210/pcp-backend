@@ -1,0 +1,17 @@
+br\com\greenwaiver\entities\ListaProdutoPrecoId.class
+br\com\greenwaiver\dto\EstruturaProdutoFinalDTO.class
+br\com\greenwaiver\entities\ListaProduto.class
+br\com\greenwaiver\entities\ListaProdutoItem.class
+br\com\greenwaiver\handler\MessageErrorException.class
+br\com\greenwaiver\repositories\impl\EstruturaProdutoRepositoryImpl.class
+br\com\greenwaiver\services\ListaProdutoEstruturaService.class
+br\com\greenwaiver\handler\MessageErrorEnum.class
+br\com\greenwaiver\services\ListaProdutoService.class
+br\com\greenwaiver\entities\ListaProdutoPreco.class
+br\com\greenwaiver\utils\EstruturaProdutoUtil.class
+br\com\greenwaiver\entities\EstruturaProdutoView.class
+br\com\greenwaiver\repositories\ListaProdutoRepository.class
+br\com\greenwaiver\repositories\EstruturaProdutoRepository.class
+br\com\greenwaiver\entities\ListaProdutoCustoVar.class
+br\com\greenwaiver\dto\ListaProdutoDTO.class
+br\com\greenwaiver\entities\ListaProdutoCustoVarId.class

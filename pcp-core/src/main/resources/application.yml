@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /green-waiver/api/v1
+
+spring:
+  profiles:
+    active:
+    - ${PROFILE}
+  application:
+    name: pcp-stock
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=PYSKO;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: santana@0210
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: false 
+    hibernate:    
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#  autoconfigure:
+#    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration        

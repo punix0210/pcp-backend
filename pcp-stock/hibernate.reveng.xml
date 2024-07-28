@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="Produto"/>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="ProdutoLote"/>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="ProdutoLoteEmpresa"/>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="ProdutoLoteItem"/>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="ProdutoLoteSetor"/>
+  <table-filter match-catalog="FINART2" match-schema="dbo" match-name="Produto_Empresa"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ListaProduto"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ListaProdutoItem"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ListaProduto_CustoVar"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ListaProduto_Preco"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ProdutoPCP"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ProdutoPCP_Empresa"/>
+  <table-filter match-catalog="FINART2" match-schema="wpcp" match-name="ProdutoPCP_cliente"/>
+</hibernate-reverse-engineering>
