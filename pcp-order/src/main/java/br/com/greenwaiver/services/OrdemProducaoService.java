@@ -26,6 +26,7 @@ public class OrdemProducaoService {
 	}
 
 	public Page<OrdemProducaoProductView> search_product(int page, int size, OrderFilterDTO filter) {
+		log.info("search order :: page e size :: {} - {}", page, size);		
 		return repository.search_product(filter, PageRequest.of(page, size));
 	}
 	
