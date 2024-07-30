@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.greenwaiver.dto.OrderFilterDTO;
@@ -30,8 +31,11 @@ public class OrdemProducaoController {
 	}
 	
 	@PostMapping(path = "find-by-range-product")
-	public ResponseEntity<?> search_product(@RequestBody OrderFilterDTO filter) {	 
-		return new ResponseEntity<>(service.search_product(filter), HttpStatus.OK);
+	public ResponseEntity<?> search_product(
+			@RequestParam(name = "page", defaultValue = "0") int page,
+			@RequestParam(name = "size", defaultValue = "1") int size,			
+			@RequestBody OrderFilterDTO filter) {	 
+		return new ResponseEntity<>(service.search_product(page, size,filter), HttpStatus.OK);
 	}	
 	
 	@PostMapping(path = "find-by-range-material")

@@ -5,6 +5,8 @@ import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import br.com.greenwaiver.dto.OrderFilterDTO;
@@ -23,8 +25,8 @@ public class OrdemProducaoService {
 		this.repository = repository;
 	}
 
-	public List<OrdemProducaoProductView> search_product(OrderFilterDTO filter) {
-		return repository.search_product(filter);
+	public Page<OrdemProducaoProductView> search_product(int page, int size, OrderFilterDTO filter) {
+		return repository.search_product(filter, PageRequest.of(page, size));
 	}
 	
 	public List<OrdemProducaoMaterialView> search_material(OrderFilterDTO filter) {
