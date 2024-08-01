@@ -30,7 +30,7 @@ public class EstruturaProdutoUtil {
 			+ " 'N' AS stProdutoFantasma, " + " CAST(0 AS float) AS vlPerdaHorizontal, "
 			+ " CAST(0 AS float) AS vlPerdaVertical, " + " CAST(0 AS float) AS qtRendimento, "
 			+ " CAST(0 AS float) AS qtPecaM2, " + " CAST(0 AS float) AS qtAproveitamento, "
-			+ " CAST(0 AS float) AS qtTotRendimento, " + " CAST(0 AS float) AS qtBase, "
+			+ " CAST(0 AS float) AS qtTotRendimento, " + " CAST(1 AS float) AS qtBase, "
 			+ " CAST(0 AS float) AS vlFator, " + " 0 AS cdEmpresaOp "
 			+ "FROM wpcp.ListaProduto lp, dbo.vw_ProdutoPrincipal vpp, wpcp.ProdutoPCP pp "
 			+ "WHERE lp.idProduto = vpp.idProduto " + "    AND vpp.idProduto = pp.idProduto "

@@ -110,7 +110,7 @@ public class OrdemProducaoProductView {
 				(String) record[29] // nmSetor
 		);
 	}
-
+	
 	// Métodos getters
 	public String getIdOrdemProducao() {
 		return idOrdemProducao;

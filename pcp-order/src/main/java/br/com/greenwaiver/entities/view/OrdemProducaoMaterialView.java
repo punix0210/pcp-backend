@@ -212,7 +212,117 @@ public class OrdemProducaoMaterialView {
 
     public Double getQtEmpenhar() {
         return qtEmpenhar;
-    }	
+    }
+
+	public void setCdEmpresa(Integer cdEmpresa) {
+		this.cdEmpresa = cdEmpresa;
+	}
+
+	public void setIdOrdemProducaoItem(String idOrdemProducaoItem) {
+		this.idOrdemProducaoItem = idOrdemProducaoItem;
+	}
+
+	public void setIdOrdemProducao(String idOrdemProducao) {
+		this.idOrdemProducao = idOrdemProducao;
+	}
+
+	public void setCdChamada(String cdChamada) {
+		this.cdChamada = cdChamada;
+	}
+
+	public void setDtCadastro(Date dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public void setIdListaProdutoItem(String idListaProdutoItem) {
+		this.idListaProdutoItem = idListaProdutoItem;
+	}
+
+	public void setStOrdemItem(Character stOrdemItem) {
+		this.stOrdemItem = stOrdemItem;
+	}
+
+	public void setIdPosicao(String idPosicao) {
+		this.idPosicao = idPosicao;
+	}
+
+	public void setIdProduto(String idProduto) {
+		this.idProduto = idProduto;
+	}
+
+	public void setCdProduto(String cdProduto) {
+		this.cdProduto = cdProduto;
+	}
+
+	public void setNmProduto(String nmProduto) {
+		this.nmProduto = nmProduto;
+	}
+
+	public void setTpProduto(String tpProduto) {
+		this.tpProduto = tpProduto;
+	}
+
+	public void setQtProdutoFinal(Double qtProdutoFinal) {
+		this.qtProdutoFinal = qtProdutoFinal;
+	}
+
+	public void setQtBase(Double qtBase) {
+		this.qtBase = qtBase;
+	}
+
+	public void setQtProduzir(Double qtProduzir) {
+		this.qtProduzir = qtProduzir;
+	}
+
+	public void setQtEstoque(Double qtEstoque) {
+		this.qtEstoque = qtEstoque;
+	}
+
+	public void setIdSetorSaida(String idSetorSaida) {
+		this.idSetorSaida = idSetorSaida;
+	}
+
+	public void setIdSetorEntrada(String idSetorEntrada) {
+		this.idSetorEntrada = idSetorEntrada;
+	}
+
+	public void setDtNecessidade(Timestamp dtNecessidade) {
+		this.dtNecessidade = dtNecessidade;
+	}
+
+	public void setStProdutoFantasma(Character stProdutoFantasma) {
+		this.stProdutoFantasma = stProdutoFantasma;
+	}
+
+	public void setStComponente(Character stComponente) {
+		this.stComponente = stComponente;
+	}
+
+	public void setTpLote(String tpLote) {
+		this.tpLote = tpLote;
+	}
+
+	public void setVlCustoBase(Double vlCustoBase) {
+		this.vlCustoBase = vlCustoBase;
+	}
+
+	public void setVlCusto(Double vlCusto) {
+		this.vlCusto = vlCusto;
+	}
+
+	public void setQtEmpenhada(Double qtEmpenhada) {
+		this.qtEmpenhada = qtEmpenhada;
+	}
+
+	public void setQtProduzida(Double qtProduzida) {
+		this.qtProduzida = qtProduzida;
+	}
+
+	public void setQtEmpenhar(Double qtEmpenhar) {
+		this.qtEmpenhar = qtEmpenhar;
+	}	
+    
+    
 	
 
 //	Integer getCdEmpresa();
