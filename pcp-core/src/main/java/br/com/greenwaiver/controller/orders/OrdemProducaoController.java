@@ -39,7 +39,10 @@ public class OrdemProducaoController {
 	}	
 	
 	@PostMapping(path = "find-by-range-material")
-	public ResponseEntity<?> searchMaterial(@RequestBody OrderFilterDTO filter) {	 
-		return new ResponseEntity<>(service.search_material(filter), HttpStatus.OK);
+	public ResponseEntity<?> searchMaterial(
+			@RequestParam(name = "page", defaultValue = "0") int page,
+			@RequestParam(name = "size", defaultValue = "1") int size,				
+			@RequestBody OrderFilterDTO filter) {	 
+		return new ResponseEntity<>(service.search_material(page, size,filter), HttpStatus.OK);
 	}	
 }
