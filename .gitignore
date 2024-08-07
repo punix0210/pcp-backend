@@ -1,0 +1,7 @@
+# Ignorar arquivos .class
+*.class
+
+# Outros arquivos e pastas a serem ignorados
+target/
+*.jar
+*.war

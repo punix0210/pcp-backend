@@ -231,6 +231,10 @@ public class OrdemProducaoProductView {
 	public String getNmSetor() {
 		return nmSetor;
 	}
+	
+	public boolean getSelected() {
+		return false;
+	}
 
 //	String getIdOrdemProducao();
 //    String getCdChamada();

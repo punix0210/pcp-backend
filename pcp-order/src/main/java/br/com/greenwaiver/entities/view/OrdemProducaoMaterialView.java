@@ -15,6 +15,7 @@ public class OrdemProducaoMaterialView {
     private String idProduto;
     private String cdProduto;
     private String nmProduto;
+    private String cdSigla;
     private String tpProduto;
     private Double qtProdutoFinal;
     private Double qtBase;
@@ -41,7 +42,8 @@ public class OrdemProducaoMaterialView {
                                            Double qtEstoque, String idSetorSaida, String idSetorEntrada,
                                            Timestamp dtNecessidade, Character stProdutoFantasma,
                                            Character stComponente, String tpLote, Double vlCustoBase,
-                                           Double vlCusto, Double qtEmpenhada, Double qtProduzida,
+                                           Double vlCusto, Double qtEmpenhada, Double qtProduzida, 
+                                           String cdSigla,
                                            Double qtEmpenhar) {
         this.cdEmpresa = cdEmpresa;
         this.idOrdemProducaoItem = idOrdemProducaoItem;
@@ -54,6 +56,7 @@ public class OrdemProducaoMaterialView {
         this.idProduto = idProduto;
         this.cdProduto = cdProduto;
         this.nmProduto = nmProduto;
+        this.cdSigla = cdSigla;
         this.tpProduto = tpProduto;
         this.qtProdutoFinal = qtProdutoFinal;
         this.qtBase = qtBase;
@@ -101,11 +104,22 @@ public class OrdemProducaoMaterialView {
             (Double) record[23], // vlCusto
             (Double) record[24], // qtEmpenhada
             (Double) record[25], // qtProduzida
-            (Double) record[26]  // qtEmpenhar
+            (String) record[26],  // UM
+            (Double) record[27]  // qtEmpenhar            		
         );
     }
 
-    // Métodos getters
+    
+    
+    public String getCdSigla() {
+		return cdSigla;
+	}
+
+	public void setCdSigla(String cdSigla) {
+		this.cdSigla = cdSigla;
+	}
+
+	// Métodos getters
     public Integer getCdEmpresa() {
         return cdEmpresa;
     }

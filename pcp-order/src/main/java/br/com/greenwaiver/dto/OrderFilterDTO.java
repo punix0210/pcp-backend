@@ -1,6 +1,7 @@
 package br.com.greenwaiver.dto;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import lombok.Data;
 
@@ -14,4 +15,6 @@ public class OrderFilterDTO {
 	String IsSubOrdem;
 	String TpInformacaoGeralOP;
 	String value;
+//	@JsonDeserialize(using = CustomStringToListDeserializer.class)
+	List<String> itensNotIn;
 }

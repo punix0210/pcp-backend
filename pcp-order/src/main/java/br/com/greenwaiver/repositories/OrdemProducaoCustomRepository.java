@@ -11,6 +11,6 @@ import br.com.greenwaiver.entities.view.OrdemProducaoProductView;
 
 public interface OrdemProducaoCustomRepository {
 	Page<OrdemProducaoProductView> search_product(OrderFilterDTO filter, Pageable pageable);
-	List<OrdemProducaoMaterialView> search_material(OrderFilterDTO filter);
+	Page<OrdemProducaoMaterialView> search_material(OrderFilterDTO filter, Pageable pageable);
 	List<OrdemProducaoMaterialView> findMaterialExitByIdOrdemProducao(String id);	
 }
