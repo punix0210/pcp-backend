@@ -71,7 +71,7 @@ public class OrdemProducaoCustomRepositoryImpl implements OrdemProducaoCustomRep
 		sqlBuilder.append(" AND (T.NmProduto LIKE :value OR T.CdProduto LIKE :value OR T.CdChamada LIKE :value ) ");
 		
         if (orders != null && !orders.isEmpty()) {
-        	sqlBuilder.append(" AND T.IdOrdemProducao NOT IN (");
+        	sqlBuilder.append(" AND T.IdOrdemProducaoItem NOT IN (");
             for (int i = 0; i < orders.size(); i++) {
             	sqlBuilder.append(":ordensNotIn").append(i);
                 if (i < orders.size() - 1) {
@@ -121,7 +121,6 @@ public class OrdemProducaoCustomRepositoryImpl implements OrdemProducaoCustomRep
 
 		return new PageImpl<>(results, pageable, totalElements);
 		
-//		return resultList.stream().map(OrdemProducaoMaterialView::fromRecord).collect(Collectors.toList());
 	}
 
 	@SuppressWarnings("unchecked")
