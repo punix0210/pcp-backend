@@ -3,11 +3,11 @@ package br.com.greenwaiver.entities.view;
 public class SetorView {
 
 	private String idSetor;
-	private String cdEmpresa;
-	private String stControlaLote;
+	private Integer cdEmpresa;
+	private Character stControlaLote;
 	private String dsSetor;
 
-	public SetorView(String idSetor, String cdEmpresa, String stControlaLote, String dsSetor) {
+	public SetorView(String idSetor, Integer cdEmpresa, Character stControlaLote, String dsSetor) {
 		this.idSetor = idSetor;
 		this.cdEmpresa = cdEmpresa;
 		this.stControlaLote = stControlaLote;
@@ -15,7 +15,7 @@ public class SetorView {
 	}
 
 	public static SetorView fromRecord(Object[] record) {
-		return new SetorView((String) record[0], (String) record[1], (String) record[2], (String) record[3]);
+		return new SetorView((String) record[0], (Integer) record[1], (Character) record[2], (String) record[3]);
 
 	}
 
@@ -23,11 +23,11 @@ public class SetorView {
 		return idSetor;
 	}
 
-	public String getCdEmpresa() {
+	public Integer getCdEmpresa() {
 		return cdEmpresa;
 	}
 
-	public String getStControlaLote() {
+	public Character getStControlaLote() {
 		return stControlaLote;
 	}
 
@@ -39,11 +39,11 @@ public class SetorView {
 		this.idSetor = idSetor;
 	}
 
-	public void setCdEmpresa(String cdEmpresa) {
+	public void setCdEmpresa(Integer cdEmpresa) {
 		this.cdEmpresa = cdEmpresa;
 	}
 
-	public void setStControlaLote(String stControlaLote) {
+	public void setStControlaLote(Character stControlaLote) {
 		this.stControlaLote = stControlaLote;
 	}
 

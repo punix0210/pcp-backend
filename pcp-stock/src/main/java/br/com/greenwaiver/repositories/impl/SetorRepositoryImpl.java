@@ -26,7 +26,7 @@ public class SetorRepositoryImpl implements SetorRepository {
 
 		Query query = manager.createNativeQuery(sql);
 		query.setParameter("status", "S");
-		query.setParameter("cdEmpresa", cdEmpresa);		
+		query.setParameter("cdEmpresa", Integer.parseInt(cdEmpresa));		
 
 		List<Object[]> resultList = query.getResultList();
 
